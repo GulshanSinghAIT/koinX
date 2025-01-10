@@ -48,8 +48,8 @@ export default function AboutBitcoin() {
                         <div className="h-40 w-40 bg-blue-300 rounded-lg"></div>
                         <div className='flex flex-col  justify-center gap-2'>
                             <h3 className="text-xl font-semibold mb-2">Calculate your Profits</h3>
-                            <button className=" bg-white text-blue-600 font-medium px-4 py-2 rounded-lg hover:bg-gray-100">
-                                Check Now
+                            <button className="bg-white text-black  py-2 px-4 rounded-lg hover:bg-gray-200">
+                            Check Now →
                             </button>
                         </div>
                     </div>
@@ -58,8 +58,9 @@ export default function AboutBitcoin() {
                         <div className="h-40 w-40 bg-orange-300 rounded-lg "></div>
                         <div className='flex flex-col  justify-center gap-2'>
                             <h3 className="text-xl font-semibold mb-2">Calculate your tax liability</h3>
-                            <button className=" bg-white text-orange-600 font-medium px-4 py-2 rounded-lg hover:bg-gray-100">
-                                Check Now
+                            
+                            <button className="bg-white text-black  py-2 px-4 rounded-lg hover:bg-gray-200">
+                            Check Now →
                             </button>
                         </div>
                     </div>

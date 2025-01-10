@@ -5,6 +5,8 @@ import Navbar from "@/components/Navbar";
 import Performance from "@/components/Performance";
 import Sediment from "@/components/Sediment";
 import AboutBitcoin from "@/components/AboutBitcoin";
+import PieChart from "@/components/PicChart";
+import Team from "@/components/Team";
 export default function Home() {
   return (
     <div className="flex h-screen">
@@ -21,6 +23,8 @@ export default function Home() {
           <Performance />
           <Sediment />
           <AboutBitcoin />
+          <PieChart />
+          <Team />
         </div>
 
         {/* Right Fixed Column */}
