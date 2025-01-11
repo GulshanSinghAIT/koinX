@@ -2,8 +2,15 @@
 
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
+
+interface BitcoinData {
+    usd: number;
+    inr: number;
+    usd_24h_change: number;
+}
+
 export default function Home() {
-    const [data, setData] = useState(null);
+    const [data, setData] = useState<BitcoinData | null>(null);
     const [error, setError] = useState<string | null>(null); 
 
     useEffect(() => {
