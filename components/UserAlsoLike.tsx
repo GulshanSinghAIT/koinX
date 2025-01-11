@@ -26,7 +26,7 @@ const UserAlsoLike = () => {
         const fetchTrendingCoins = async () => {
             try {
                 const response = await axios.get("https://api.coingecko.com/api/v3/search/trending");
-                // @ts-expect-error
+                // @ts-expect-error : Ignoring type error
                 const coins: Coin[] = response.data.coins.map((coin) => ({
                     name: coin.item.name,
                     symbol: coin.item.symbol,
