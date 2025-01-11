@@ -3,12 +3,12 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules';
 import SwiperCore from 'swiper';
 import axios from 'axios';
 
 interface Coin {
     name: string;
+    item : [];
     symbol: string;
     price: string;
     marketCapRank: number;
@@ -26,8 +26,8 @@ const UserAlsoLike = () => {
         const fetchTrendingCoins = async () => {
             try {
                 const response = await axios.get("https://api.coingecko.com/api/v3/search/trending");
-
-                const coins: Coin[] = response.data.coins.map((coin: any) => ({
+                // @ts-ignore
+                const coins: Coin[] = response.data.coins.map((coin) => ({
                     name: coin.item.name,
                     symbol: coin.item.symbol,
                     price: parseFloat(coin.item.price_btc).toFixed(8),
