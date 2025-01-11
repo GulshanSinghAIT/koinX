@@ -63,15 +63,15 @@ const UserAlsoLike = () => {
 
     return (
         <div className="bg-white text-black py-20">
-            <div className="max-w-[87em] mx-auto px-4">
+            <div className="md:max-w-[87em] mx-auto px-4">
                 <h2 className="text-2xl font-semibold mb-4">You May Also Like</h2>
                 <div className="relative">
                     <Swiper
                         ref={swiperRef1} // Attach first swiper instance to ref
                         spaceBetween={20}
-                        slidesPerView={4}
                         loop={true}
                         breakpoints={{
+                            0: { slidesPerView: 1.5 },
                             640: { slidesPerView: 2 },
                             768: { slidesPerView: 3 },
                             1024: { slidesPerView: 5 },
@@ -125,9 +125,9 @@ const UserAlsoLike = () => {
                     <Swiper
                         ref={swiperRef2} // Attach second swiper instance to ref
                         spaceBetween={20}
-                        slidesPerView={4}
                         loop={true}
                         breakpoints={{
+                            0: { slidesPerView: 1.5 },
                             640: { slidesPerView: 2 },
                             768: { slidesPerView: 3 },
                             1024: { slidesPerView: 5 },

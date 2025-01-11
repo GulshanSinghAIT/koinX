@@ -43,10 +43,10 @@ export default function Home() {
     }
 
     return (
-        <div className="  flex justify-center items-center p-4 mt-5">
-            <div className="bg-white shadow-md rounded-lg p-8 w-full  border border-gray-200">
+        <div className="  flex justify-center items-center p-4 md:mt-5">
+            <div className="md:bg-white md:shadow-md rounded-lg md:p-8  w-full  border border-gray-200">
                
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between p-2 md:px-0 items-center">
                     <div className='flex gap-2 items-center'>
                         <Image
                             src="/Bitcoin.svg.png"
@@ -58,9 +58,10 @@ export default function Home() {
                     </div>
                     
                 </div>
-
+ 
+            <div className=' bg-white p-2 m-2 md:p-0 rounded-lg  shadow-md md:shadow-none'>
            
-                <div className="mt-6">
+                <div className="mt-6 ">
                     <div className='inline-flex gap-4'>
                     <h2 className="text-2xl text-black tracking-wider font-semibold">${data.usd.toLocaleString()}</h2> 
                     <div>
@@ -84,14 +85,15 @@ export default function Home() {
                     <h3 className="text-sm text-black font-semibold pb-3 mb-2">Bitcoin Price Chart (USD)</h3>
                     <iframe
                         src="https://s.tradingview.com/embed-widget/advanced-chart/?symbol=COINBASE:BTCUSD&theme=light&style=1&locale=en"
-                        width="100%"
-                        height="450"
+                      
+                        className='h-[270px] w-full md:h-[450px]'
                         frameBorder="0"
                         scrolling="no"
                         allowtransparency="true"
                         style={{ border: 'none' }}
                     ></iframe>
                 </div>
+            </div>
             </div>
         </div>
     );

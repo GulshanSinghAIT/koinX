@@ -26,7 +26,7 @@ const teamMembers = [
 
 const Team = () => {
     return (
-        <div className="bg-white text-black  rounded-lg m-4 py-12 p-6 w-full">
+        <div className="bg-white text-black  rounded-lg m-4 py-12 p-6">
             <div className=" mx-auto px-4">
                 <h2 className="text-3xl font-bold text-gray-800 mb-6">Team</h2>
                 <p className="text-gray-600 mb-10">
@@ -36,7 +36,7 @@ const Team = () => {
                     {teamMembers.map((member, index) => (
                         <div
                             key={index}
-                            className="bg-[#E8F4FD] rounded-lg flex gap-5 shadow-md p-4 "
+                            className="bg-[#E8F4FD] rounded-lg flex flex-col md:flex-row items-center md:items-start gap-5 shadow-md p-4 "
                         >
                             <div className='w-[30%] text-center'>
 

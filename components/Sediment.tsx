@@ -10,13 +10,13 @@ export default function Sentiment() {
         <h1 className="text-2xl font-bold mb-6">Sentiment</h1>
 
         {/* Key Events Section */}
-        <div>
+        <div className=' hidden md:block'>
           <div className="flex gap-2 items-center mb-4">
             <h2 className="text-lg font-semibold text-[#44475B]">Key Events</h2>
             <FaInfoCircle className="text-gray-400" title="Information about key events" />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className=" gap-4 flex  w-[90%] md:w-[100%] overflow-x-auto scrollbar">
             <div className="bg-blue-50 p-6 py-8 rounded-xl flex">
               <div className="mr-4">
                 <div className="bg-blue-500 text-white w-8 h-8 flex items-center justify-center rounded-full">
@@ -59,7 +59,7 @@ export default function Sentiment() {
           </div>
 
           <div className="flex items-center space-x-10 py-5">
-            <div className="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center">
+            <div className="md:w-24 w-20 h-20 md:h-24 bg-green-100 rounded-full flex items-center justify-center">
               <h3 className="text-2xl font-bold text-green-600">76%</h3>
             </div>
 

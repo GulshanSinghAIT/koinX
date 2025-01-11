@@ -12,13 +12,13 @@ const Performance = () => {
                     <h2 className="text-2xl font-semibold mb-4">Performance</h2>
                     <div className="">
                         <div className="flex flex-row gap-5 justify-evenly">
-                            <div>
+                            <div className="text-xs md:text-base">
                                 <p className="text-gray-500 whitespace-nowrap">Today's Low</p>
                                 <p className="py-2 text-gray-500">46,930.22</p>
                             </div>
 
-                            {/* First Bar */}
-                            <div className="w-full px-5 relative my-4">
+                            
+                            <div className="w-full md:px-5 text-xs md:text-base relative my-4">
                                 <div className="relative h-2 bg-gray-200 rounded-full overflow-hidden">
                                     <div className="absolute inset-0 bg-gradient-to-r from-red-500 via-yellow-500 to-green-500"></div>
                                 </div>
@@ -30,26 +30,26 @@ const Performance = () => {
                                 </p>
                             </div>
 
-                            <div className="text-right">
+                            <div className="text-right text-xs md:text-base">
                                 <p className="text-gray-500 whitespace-nowrap">Today's High</p>
-                                <p className="py-2 text-gray-500">49,343.83</p>
+                                <p className="py-2 text-gray-500 ">49,343.83</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row gap-5 py-7 justify-evenly">
-                            <div>
+                            <div className="text-xs md:text-base">
                                 <p className="text-gray-500 whitespace-nowrap">52W High</p>
                                 <p className="py-2 text-gray-500">16,930.22</p>
                             </div>
 
                             {/* First Bar */}
-                            <div className="w-full px-10 relative my-4">
+                            <div className="w-full md:px-10 px-3 relative my-4">
                                 <div className="relative h-2 bg-gray-200 rounded-full overflow-hidden">
                                     <div className="absolute inset-0 bg-gradient-to-r from-red-500 via-yellow-500 to-green-500"></div>
                                 </div>
                             </div>
 
-                            <div className="text-right">
+                            <div className="text-right text-xs md:text-base">
                                 <p className="text-gray-500 whitespace-nowrap">52W High</p>
                                 <p className="py-2 text-gray-500">49,743.83</p>
                             </div>
@@ -63,7 +63,7 @@ const Performance = () => {
                         Fundamentals
                         <FaInfoCircle className="ml-3 text-gray-400 cursor-pointer" />
                     </h2>
-                    <div className="grid grid-cols-2 gap-y-6 gap-20 text-sm border-gray-300 pt-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-20 text-sm border-gray-300 pt-4">
                         <div className="flex border-b py-4 justify-between items-center">
                             <p className="text-gray-500">Bitcoin Price</p>
                             <p className="font-semibold">$16,815.46</p>
