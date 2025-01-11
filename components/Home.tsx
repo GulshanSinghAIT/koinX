@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 export default function Home() {
     const [data, setData] = useState(null);
-    const [error, setError] = useState(null);
+    const [error, setError] = useState<string | null>(null); 
 
     useEffect(() => {
         const fetchData = async () => {
@@ -26,9 +26,14 @@ export default function Home() {
                 const result = await response.json();
                 setData(result.bitcoin);
                 console.log(result.bitcoin);
-            } catch (err) {
-                setError(err.message);
+            }catch (err) {
+                if (err instanceof Error) {
+                    setError(err.message);
+                } else {
+                    setError('An unknown error occurred');
+                }
             }
+            
         };
 
         fetchData();
