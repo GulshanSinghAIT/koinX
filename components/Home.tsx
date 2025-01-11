@@ -100,7 +100,6 @@ export default function Home() {
                         className='h-[270px] w-full md:h-[450px]'
                         frameBorder="0"
                         scrolling="no"
-                        allowtransparency="true"
                         style={{ border: 'none' }}
                     ></iframe>
                 </div>
