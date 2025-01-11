@@ -6,8 +6,6 @@ import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import SwiperCore from 'swiper';
 import axios from 'axios';
-import Image from 'next/image';
-
 const UserAlsoLike = () => {
     SwiperCore.use([Navigation]);
     const [trendingCoins, setTrendingCoins] = useState([]);

@@ -11,10 +11,13 @@ export default function AboutBitcoin() {
                 <div className="mb-6">
                     <h2 className="text-lg font-semibold mb-2">What is Bitcoin?</h2>
                     <p className="text-gray-600">
-                        Bitcoin's price today is <span className="font-medium">US$16,951.82</span>, with a 24-hour trading volume of <span className="font-medium">US$19.14 B</span>.
-                        BTC is <span className="font-medium">+0.36%</span> in the last 24 hours. It is currently <span className="font-medium">-7.70%</span> from its 7-day all-time high of <span className="font-medium">US$18,366.66</span>, and <span className="font-medium">3.40%</span> from its 7-day all-time low of
-                        <span className="font-medium">US$16,394.75</span>. BTC has a circulating supply of <span className="font-medium">19.24 M BTC</span> and a max supply of <span className="font-medium">21 M BTC</span>.
-                    </p>
+    Bitcoin&#39;s price today is <span className="font-medium">US $16,951.82</span>, with a 24-hour trading volume of <span className="font-medium">US$19.14 B</span>.
+    BTC is <span className="font-medium">+0.36%</span> in the last 24 hours. It is currently <span className="font-medium">-7.70%</span> from its 7-day
+    all-time high of <span className="font-medium">US $18,366.66</span>, and <span className="font-medium">3.40%</span> from its 7-day all-time low of
+    <span className="font-medium">US$16,394.75</span>. BTC has a circulating supply of <span className="font-medium">19.24 M BTC</span> and a max
+    supply of <span className="font-medium">21 M BTC</span>.
+</p>
+
                 </div>
 
                 <hr className="py-2" />
