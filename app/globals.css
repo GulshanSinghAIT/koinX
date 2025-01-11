@@ -17,3 +17,38 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.custom-arrow {
+  width: 30px; /* Smaller size */
+  height: 30px;
+  background-color: gray; /* Gray circle */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Arrow color */
+  font-size: 14px; /* Adjust arrow symbol size */
+  position: absolute;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-prev {
+  left: -20px; /* Position to the left of the Swiper */
+}
+
+.custom-next {
+  right: -20px; /* Position to the right of the Swiper */
+}
+
+.custom-arrow:hover {
+  background-color: darkgray; /* Hover effect */
+}
+
+.custom-arrow:focus {
+  outline: none; /* Remove focus outline */
+}

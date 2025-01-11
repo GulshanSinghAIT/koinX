@@ -7,7 +7,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-10">
-      <div className="container mx-auto py-4 flex justify-between items-center">
+      <div className="container mx-auto py-4 px-3 md:px-16 flex justify-between items-center">
         
         <div className="flex items-center">
           <img src="/KoinX.svg" alt="KoinX Logo" className="h-6" />
