@@ -1,9 +1,9 @@
 import React from "react";
-import { FaInfoCircle } from "react-icons/fa"; // Import the info icon from react-icons
+import { FaInfoCircle } from "react-icons/fa"; 
 
 const Performance = () => {
-    const currentPointPercentage = 80; // Example percentage for the first bar
-    const currentPointValue = "$48,637.83"; // Example value for the first bar
+    const currentPointPercentage = 80; 
+    const currentPointValue = "$48,637.83"; 
 
     return (
         <div className="p-4">
@@ -42,7 +42,6 @@ const Performance = () => {
                                 <p className="py-2 text-gray-500">16,930.22</p>
                             </div>
 
-                            {/* First Bar */}
                             <div className="w-full md:px-10 px-3 relative my-4">
                                 <div className="relative h-2 bg-gray-200 rounded-full overflow-hidden">
                                     <div className="absolute inset-0 bg-gradient-to-r from-red-500 via-yellow-500 to-green-500"></div>
@@ -56,8 +55,6 @@ const Performance = () => {
                         </div>
                     </div>
                 </div>
-
-                {/* Fundamentals Section */}
                 <div className="mt-8">
                     <h2 className="text-xl font-semibold mb-4 flex items-center">
                         Fundamentals

@@ -1,4 +1,4 @@
-'use client'; // Ensure it's a client component in Next.js
+'use client'; 
 
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
@@ -80,7 +80,6 @@ export default function Home() {
                 </div>
                 <hr  className='mt-3'/>
 
-                {/* Chart Section */}
                 <div className="mt-5">
                     <h3 className="text-sm text-black font-semibold pb-3 mb-2">Bitcoin Price Chart (USD)</h3>
                     <iframe

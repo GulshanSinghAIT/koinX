@@ -9,7 +9,7 @@ const Right_ = () => {
         try {
           const res = await fetch("https://api.coingecko.com/api/v3/search/trending");
           const data = await res.json();
-          setTrendingCoins(data.coins.slice(0, 3)); // Get the top 3 trending coins
+          setTrendingCoins(data.coins.slice(0, 3)); 
         } catch (error) {
           console.error("Error fetching trending coins:", error);
         }

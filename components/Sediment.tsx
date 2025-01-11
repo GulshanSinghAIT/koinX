@@ -6,10 +6,10 @@ export default function Sentiment() {
   return (
     <div className='m-4'>
       <div className="bg-white shadow-md text-black  rounded-xl py-12 p-6 w-full  border border-gray-200">
-        {/* Header Section */}
+      
         <h1 className="text-2xl font-bold mb-6">Sentiment</h1>
 
-        {/* Key Events Section */}
+        
         <div className=' hidden md:block'>
           <div className="flex gap-2 items-center mb-4">
             <h2 className="text-lg font-semibold text-[#44475B]">Key Events</h2>
@@ -51,7 +51,7 @@ export default function Sentiment() {
           </div>
         </div>
 
-        {/* Analyst Estimates Section */}
+        
         <div className="mt-6">
           <div className="flex gap-2 items-center mb-4">
             <h2 className="text-lg font-semibold text-[#44475B]">Analyst Estimates</h2>

@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import Homee from "../components/Home";
 import Right_ from "../components/Right_";
 import Navbar from "@/components/Navbar";
@@ -17,7 +17,7 @@ export default function Home() {
           <Navbar />
         </div>
 
-        {/* Main Content */}
+     
         <div className="flex flex-grow mt-16 md:px-10">
           <div className=" md:w-[75%]  md:px-4 text-white h-full">
             <Homee />

@@ -3,7 +3,7 @@ import React from 'react';
 import { Doughnut } from 'react-chartjs-2';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 
-// Register necessary Chart.js components
+
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 export default function Tokenomics() {
@@ -32,7 +32,7 @@ export default function Tokenomics() {
 
         {/* Doughnut Chart Section */}
         <div className="flex flex-col md:flex-row items-center  gap-8 mb-6">
-          {/* Doughnut Chart */}
+          
           <div className=" w-56 h-56">
             <Doughnut data={data} />
           </div>

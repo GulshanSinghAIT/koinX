@@ -67,7 +67,7 @@ const UserAlsoLike = () => {
                 <h2 className="text-2xl font-semibold mb-4">You May Also Like</h2>
                 <div className="relative">
                     <Swiper
-                        ref={swiperRef1} // Attach first swiper instance to ref
+                        ref={swiperRef1} 
                         spaceBetween={20}
                         loop={true}
                         breakpoints={{
@@ -119,11 +119,11 @@ const UserAlsoLike = () => {
                     </button>
                 </div>
 
-                {/* "Trending Coins (24h)" Section */}
+           
                 <h2 className="text-2xl font-semibold mt-10 mb-4">Trending Coins</h2>
                 <div className="relative">
                     <Swiper
-                        ref={swiperRef2} // Attach second swiper instance to ref
+                        ref={swiperRef2}
                         spaceBetween={20}
                         loop={true}
                         breakpoints={{

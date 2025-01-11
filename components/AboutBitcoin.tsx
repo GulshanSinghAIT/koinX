@@ -1,14 +1,14 @@
-'use client'; // Next.js Client Component
+'use client'; 
 import React from 'react';
 
 export default function AboutBitcoin() {
     return (
         <div className="bg-gray-50 text-black rounded-lg m-4 py-10 px-8">
-            {/* About Bitcoin Section */}
+     
             <div className=" mx-auto  ">
                 <h1 className="text-2xl font-bold mb-4">About Bitcoin</h1>
 
-                {/* What is Bitcoin Section */}
+             
                 <div className="mb-6">
                     <h2 className="text-lg font-semibold mb-2">What is Bitcoin?</h2>
                     <p className="text-gray-600">
@@ -21,7 +21,7 @@ export default function AboutBitcoin() {
                 </div>
                 <hr className='py-2' />
 
-                {/* Additional Content */}
+            
                 <div className="mb-6">
                     <h2 className="text-lg font-semibold mb-2">Lorem ipsum dolor sit amet</h2>
                     <p className="text-gray-600 mb-4">
