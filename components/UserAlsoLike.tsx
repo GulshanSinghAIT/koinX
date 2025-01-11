@@ -6,11 +6,10 @@ import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import SwiperCore from 'swiper';
 import axios from 'axios';
-
-// Initialize the Swiper navigation module
-SwiperCore.use([Navigation]);
+import Image from 'next/image';
 
 const UserAlsoLike = () => {
+    SwiperCore.use([Navigation]);
     const [trendingCoins, setTrendingCoins] = useState([]);
     const swiperRef1 = useRef(null); // Ref for the first carousel
     const swiperRef2 = useRef(null); // Ref for the second carousel

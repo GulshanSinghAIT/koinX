@@ -13,11 +13,10 @@ const Performance = () => {
                     <div className="">
                         <div className="flex flex-row gap-5 justify-evenly">
                             <div className="text-xs md:text-base">
-                                <p className="text-gray-500 whitespace-nowrap">Today's Low</p>
+                                <p className="text-gray-500 whitespace-nowrap">Today&apos;s Low</p>
                                 <p className="py-2 text-gray-500">46,930.22</p>
                             </div>
 
-                            
                             <div className="w-full md:px-5 text-xs md:text-base relative my-4">
                                 <div className="relative h-2 bg-gray-200 rounded-full overflow-hidden">
                                     <div className="absolute inset-0 bg-gradient-to-r from-red-500 via-yellow-500 to-green-500"></div>
@@ -31,7 +30,7 @@ const Performance = () => {
                             </div>
 
                             <div className="text-right text-xs md:text-base">
-                                <p className="text-gray-500 whitespace-nowrap">Today's High</p>
+                                <p className="text-gray-500 whitespace-nowrap">Today&apos;s High</p>
                                 <p className="py-2 text-gray-500 ">49,343.83</p>
                             </div>
                         </div>
