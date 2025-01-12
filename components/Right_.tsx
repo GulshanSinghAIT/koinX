@@ -18,7 +18,7 @@ const Right_ = () => {
   useEffect(() => {
     async function fetchTrendingCoins() {
       try {
-        const res = await fetch('https://api.coingecko.com/api/v3/search/trending');
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}search/trending`);
         const data = await res.json();
         setTrendingCoins(data.coins.slice(0, 3)); // Ensure only the top 3 coins are shown
       } catch (error) {

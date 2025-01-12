@@ -20,9 +20,9 @@ export default function Home() {
                     method: 'GET',
                     headers: { accept: 'application/json' },
                 };
-
+                const endpoint = 'simple/price?ids=bitcoin&vs_currencies=inr,usd&include_24hr_change=true';
                 const response = await fetch(
-                    'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=inr,usd&include_24hr_change=true',
+                    `${process.env.NEXT_PUBLIC_API_URL}${endpoint}`,
                     options
                 );
 
